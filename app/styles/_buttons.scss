@@ -1,0 +1,82 @@
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  margin: 1rem;
+  outline: none;
+  transition: all 0.4s ease;
+}
+
+.btn--primary {
+  transition: 0.3s all ease;
+  background: $first-color;
+  box-shadow: $boxShadow-1;
+
+  &:hover {
+    background: $first-color-light;
+  }
+}
+.btn--secondary {
+  background: $second-color;
+  box-shadow: $boxShadow-2;
+
+  &:hover {
+    background: $second-color-light;
+  }
+}
+
+.btn--small {
+  height: 2.4rem;
+  width: 8rem;
+}
+
+.btn--medium {
+  height: 3.6rem;
+  width: 12rem;
+}
+
+.btn--borderBottomPrimary {
+  border-bottom: 0.3rem solid $primary;
+}
+
+.btn--borderBottomSecondary {
+  border-bottom: 0.3rem solid $secondary;
+}
+
+.btn--inlinePrimary {
+  border: 1px solid $primary;
+  background: white;
+  color: $primary;
+  border-bottom: 0.3rem solid $primary;
+
+  &:hover {
+    color: white;
+  }
+}
+.btn--inlineSecondary {
+  border: 1px solid $secondary;
+  background: white;
+  color: $secondary;
+  border-bottom: 0.3rem solid $secondary;
+
+  &:hover {
+    color: white;
+  }
+}

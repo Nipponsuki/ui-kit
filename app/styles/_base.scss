@@ -1,0 +1,81 @@
+$first-color: linear-gradient(45deg, #8e2de2 30%, #4a00e0 90%);
+$first-color-light: linear-gradient(
+  45deg,
+  hsl(272, 76%, 60%) 30%,
+  hsl(260, 100%, 60%) 90%
+);
+$second-color: linear-gradient(45deg, hsl(317, 45%, 52%) 30%, #f80759 90%);
+$second-color-light: linear-gradient(
+  45deg,
+  hsl(317, 45%, 60%) 30%,
+  hsl(340, 95%, 60%) 90%
+);
+$primary: hsl(265, 78%, 30%);
+$secondary: hsl(332, 69%, 30%);
+$boxShadow-1: 0 3px 5px 2px rgba(110, 28, 225, 0.3);
+$boxShadow-2: 0 3px 5px 2px rgba(217, 47, 125, 0.3);
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 772px) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 40%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  min-width: 320px;
+  max-width: 1920px;
+  font-family: "Ubuntu", sans-serif;
+  padding: 6rem 10rem;
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+button {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform 0.5s, opacity 1s;
+  }
+  &:active:after {
+    transform: scale(0, 0);
+    opacity: 0.3;
+    transition: 0s;
+  }
+}
