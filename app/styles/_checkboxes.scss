@@ -1,0 +1,97 @@
+.final__toggle-1 {
+  font-family: Helvetica, Arial, sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 0 0;
+}
+.final__toggle-1__input {
+  display: none;
+}
+.final__toggle-1__button {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #f2395a;
+  border: 1px solid #f2395a;
+  color: #ffffff;
+  width: 8rem;
+  height: 3rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 3rem;
+}
+.final__toggle-1__button:before {
+  position: absolute;
+  top: 4px;
+  left: 40px;
+  right: auto;
+  display: inline-block;
+  height: 20px;
+  padding: 0 2px;
+  background-color: #ffffff;
+  color: #f2395a;
+  content: "off";
+  transition: all 0.3s ease;
+  border-radius: 2rem;
+}
+.final__toggle-1__input:checked + .final__toggle-1__button {
+  background-color: #4a00e0;
+  border: 1px solid #4a00e0;
+}
+.final__toggle-1__input:checked + .final__toggle-1__button:before {
+  left: 5px;
+  content: "on";
+  color: #4a00e0;
+}
+
+.final__toggle-2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 0 0;
+  border-radius: 50%;
+}
+.final__toggle-2__input {
+  display: none;
+}
+.final__toggle-2__button {
+  position: relative;
+  display: inline-block;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #aaaaaa;
+  border: 1px solid #cccccc;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// .final__toggle-2__button:before {
+//   position: absolute;
+//   top: 10px;
+//   left: 10px;
+//   right: auto;
+//   display: inline-block;
+//   width: 10px;
+//   height: 10px;
+//   background-color: #cccccc;
+//   content: "";
+//   transition: all 0.3s ease;
+// }
+.final__toggle-2__input:checked + .final__toggle-2__button {
+  background-color: #4a00e0;
+  border-color: #4a00e0;
+  color: #ffffff;
+}
+.final__toggle-2__input:checked + .final__toggle-2__button:before {
+  background-color: #ffffff;
+}

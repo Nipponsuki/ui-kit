@@ -1,0 +1,22 @@
+h1.title form elements
+	.wrapper
+		form.form
+			input.name-input(type="name" placeholder="Your Name")
+			input.email-input(type="email" placeholder="Your Email")
+			textarea.message-input(placeholder="Your Message")
+			button.submit-btn.btn.btn--primary.btn--medium.btn--inlinePrimary(type="submit") Submit
+			.error-message Error
+			.success-message Thanks!
+		.checks-boxes
+			.toggles
+				p.title toggles
+				label.final__toggle-1(for='final-toggle1')
+					input#final-toggle1.final__toggle-1__input(type='checkbox')
+					span.final__toggle-1__button
+			.tickboxes
+				p.title tick boxes
+				label.final__toggle-2(for='final-toggle2')
+					input#final-toggle2.final__toggle-2__input(type='checkbox')
+					span.final__toggle-2__button 
+						i.fas.fa-check
+
