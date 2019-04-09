@@ -14,6 +14,16 @@ const slider1 = document.getElementById('slider1')
 const slider1Value = document.querySelector('.value')
 const slider2 = document.getElementById('slider2')
 const slider2Values = document.querySelector('.slider-bgc')
+const steps = document.querySelectorAll('.progress-step')
+const stages = document.querySelector('.bgc')
+
+steps.forEach((step) => step.addEventListener('click', nextStep))
+
+function nextStep () {
+  const { step } = this.dataset
+  stages.style.width = `${step}%`
+  this.style.background = '#4a00e0'
+}
 
 form.addEventListener('submit', onSubmit)
 
@@ -42,16 +52,15 @@ function removeFeedback (type) {
     setTimeout(() => { success.style.display = 'none' }, 3000)
   }
 }
-
-slider1.addEventListener('input', function () {
-  slider1Value.innerHTML = this.value
-})
-
-slider2.addEventListener('input', function () {
-  const value = this.value
-  slider2Values.style.width = `${value}%`
-})
-
 document.addEventListener('DOMContentLoaded', () => {
+  slider1.addEventListener('input', function () {
+    slider1Value.innerHTML = this.value
+  })
+
+  slider2.addEventListener('input', function () {
+    const value = this.value
+    slider2Values.style.width = `${value}%`
+  })
   onSubmit()
+  nextStep()
 })
