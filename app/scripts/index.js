@@ -10,6 +10,10 @@ const emailInput = document.querySelector('.email-input')
 const messageInput = document.querySelector('.message-input')
 const error = document.querySelector('.error-message')
 const success = document.querySelector('.success-message')
+const slider1 = document.getElementById('slider1')
+const slider1Value = document.querySelector('.value')
+const slider2 = document.getElementById('slider2')
+const slider2Values = document.querySelector('.slider-bgc')
 
 form.addEventListener('submit', onSubmit)
 
@@ -38,6 +42,15 @@ function removeFeedback (type) {
     setTimeout(() => { success.style.display = 'none' }, 3000)
   }
 }
+
+slider1.addEventListener('input', function () {
+  slider1Value.innerHTML = this.value
+})
+
+slider2.addEventListener('input', function () {
+  const value = this.value
+  slider2Values.style.width = `${value}%`
+})
 
 document.addEventListener('DOMContentLoaded', () => {
   onSubmit()
