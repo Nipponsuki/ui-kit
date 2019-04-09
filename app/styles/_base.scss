@@ -4,7 +4,7 @@ $first-color-light: linear-gradient(
   hsl(272, 76%, 60%) 30%,
   hsl(260, 100%, 60%) 90%
 );
-$second-color: linear-gradient(45deg, hsl(317, 45%, 52%) 30%, #f80759 90%);
+$second-color: linear-gradient(45deg, #bb4d9c 30%, #f80759 90%);
 $second-color-light: linear-gradient(
   45deg,
   hsl(317, 45%, 60%) 30%,
@@ -14,6 +14,10 @@ $primary: hsl(265, 78%, 30%);
 $secondary: hsl(332, 69%, 30%);
 $boxShadow-1: 0 3px 5px 2px rgba(110, 28, 225, 0.3);
 $boxShadow-2: 0 3px 5px 2px rgba(217, 47, 125, 0.3);
+$grey: #e5e5e5;
+$purple: #bf74ed;
+
+$circle-width: 0.08em;
 
 *,
 *::after,

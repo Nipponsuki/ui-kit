@@ -1,0 +1,138 @@
+.charts {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.rect-auto {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.pie {
+  position: absolute;
+  border: $circle-width solid $primary;
+  width: 1 - (2 * $circle-width);
+  height: 1 - (2 * $circle-width);
+  clip: rect(0em, 0.5em, 1em, 0em);
+  border-radius: 50%;
+  transform: rotate(0deg);
+}
+
+.pie-fill {
+  transform: rotate(180deg);
+}
+.percentage {
+  *,
+  *:before,
+  *:after {
+    box-sizing: content-box;
+  }
+
+  position: relative;
+  font-size: 80px;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  float: left;
+  margin: 0.4em;
+  background-color: white;
+
+  // centered value inside circle
+  > span {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 5em;
+    line-height: 5em;
+    font-size: 0.2em;
+    color: $grey;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  // background inside the circle
+  &:after {
+    position: absolute;
+    top: $circle-width;
+    left: $circle-width;
+    display: block;
+    content: " ";
+    border-radius: 50%;
+    background-color: white;
+    width: 1 - (2 * $circle-width);
+    height: 1 - (2 * $circle-width);
+    transition: all 0.2s ease-in;
+  }
+
+  // the slice (mask)
+  .slice {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    clip: rect(0em, 1em, 1em, 0.5em);
+  }
+
+  // circle to show the status
+  .bar {
+    @extend .pie;
+  }
+
+  // loop to create all needed elements automatically
+  @for $j from 51 through 100 {
+    &.p#{$j} .slice {
+      @extend .rect-auto;
+    }
+
+    &.p#{$j} .bar:after {
+      @extend .pie-fill;
+    }
+
+    &.p#{$j} .fill {
+      @extend .pie;
+      @extend .pie-fill;
+    }
+  }
+
+  // loop to rotate all 100 circles
+  @for $j from 1 through 100 {
+    &.p#{$j} .bar {
+      transform: rotate((360/100 * $j) + deg);
+    }
+  }
+}
+
+.bar,
+.fill {
+  border-color: $primary;
+}
+
+.pie-chart {
+  margin-top: 3rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+
+  border: 0.15em solid #fff;
+  box-shadow: 0 0.075em 0.2em 0.05em rgba(0, 0, 0, 0.25);
+
+  background-origin: border-box;
+  background-image: conic-gradient(#d44 72deg, #fc3 0 234deg, #ac0 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-circle {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
