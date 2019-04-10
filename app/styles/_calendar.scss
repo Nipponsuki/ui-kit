@@ -1,21 +1,20 @@
+.calendar {
+  margin-top: 2rem;
+  width: auto;
+  flex: 1;
 
-.calendar{
-	margin-top: 2rem;
-	width: auto;
-	flex: 1;
-
-	button{
-		background: $first-color !important;
+  button {
+    background: $first-color !important;
     border: 2px solid white;
-    
-    &:hover{
+
+    &:hover {
       border: 2px solid white;
     }
-	}
+  }
 
-	.fc-next-button {
-		background: $second-color !important;
-	}
+  .fc-next-button {
+    background: $second-color !important;
+  }
 }
 
 /*!
@@ -119,9 +118,9 @@ hr.fc-divider {
 }
 
 .fc-bg table {
-	height: 100%;
-	
-	border-radius: 5px;
+  height: 100%;
+
+  border-radius: 5px;
   /* strech bg to bottom edge */
 }
 
@@ -135,8 +134,8 @@ hr.fc-divider {
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 1em;
-	color: white;
-	border-radius: 5px;
+  color: white;
+  border-radius: 5px;
   /* normalize cross-browser */
 }
 
@@ -144,7 +143,7 @@ hr.fc-divider {
   text-align: center;
   background: $second-color;
   color: white;
-	font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .fc th,
@@ -594,7 +593,7 @@ TODO: more distinction between this file and common.css
 .fc-unthemed .fc-popover,
 .fc-unthemed .fc-list-view,
 .fc-unthemed .fc-list-heading td {
-	border-color: #fff;
+  border-color: #fff;
 }
 
 .fc-unthemed .fc-popover {
@@ -871,9 +870,9 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
 --------------------------------------------------------------------------------------------------*/
 .fc-view-container {
   position: relative;
-	background: $first-color;
-	border-radius: 5px !important;
-	box-shadow: $boxShadow-1;
+  background: $first-color;
+  border-radius: 5px !important;
+  box-shadow: $boxShadow-1;
 }
 
 /* undo twitter bootstrap's box-sizing rules. normalizes positioning techniques */
@@ -882,7 +881,7 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
 .fc-view-container *:before,
 .fc-view-container *:after {
   -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box; 
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -890,8 +889,8 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
 .fc-view > table {
   /* so dragged elements can be above the view's main element */
   position: relative;
-	z-index: 1;
-	border-radius: 5px !important;
+  z-index: 1;
+  border-radius: 5px !important;
 }
 
 @media print {
@@ -920,8 +919,8 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
   .fc tbody,
   .fc-row {
     border-color: #ccc !important;
-		background: #fff !important;
-		border-radius: 5px !important; 
+    background: #fff !important;
+    border-radius: 5px !important;
   }
 
   /* kill the overlaid, absolutely-positioned components */

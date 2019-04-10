@@ -1,0 +1,102 @@
+.video-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+
+  button {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  &:hover .controls {
+    transform: translateY(0);
+  }
+}
+.video {
+  width: 100%;
+  max-width: 80rem;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: $boxShadow-1;
+}
+
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 80rem;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(90%);
+  transition: all 0.3s ease;
+
+  .bar {
+    height: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+
+    .color {
+      height: 1rem;
+      width: 0;
+      background: $first-color;
+    }
+  }
+}
+
+.buttons {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .play {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+
+    &::before {
+      content: "\f04b";
+      font-family: "Font Awesome 5 Free";
+      width: 3rem;
+      height: 3rem;
+      display: inline-block;
+      font-size: 2.8rem;
+      color: #8e2de2;
+    }
+  }
+  .pause {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+
+    &::before {
+      content: "\f04c";
+      font-family: "Font Awesome 5 Free";
+      width: 3rem;
+      height: 3rem;
+      display: inline-block;
+      font-size: 2.8rem;
+      color: #8e2de2;
+    }
+  }
+  .full-screen::before {
+    content: "\f78c";
+    font-family: "Font Awesome 5 Free";
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    font-size: 2.8rem;
+    color: #8e2de2;
+    background: transparent;
+  }
+}
