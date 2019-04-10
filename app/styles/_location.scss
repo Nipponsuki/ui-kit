@@ -1,0 +1,53 @@
+.map {
+  width: 60rem;
+  height: 27rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  font-weight: 300;
+  position: relative;
+
+  .map-icon {
+    position: absolute;
+    top: 17.5%;
+    left: 45.1%;
+    font-size: 5rem;
+    color: $primary;
+  }
+
+  i {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .lockup {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .map__title {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-right: 3rem;
+  }
+  .map__place {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  iframe {
+    width: 100%;
+  }
+  .map__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $first-color;
+    width: 100%;
+    padding: 2rem;
+    color: white;
+  }
+}
