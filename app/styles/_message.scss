@@ -1,0 +1,125 @@
+.wrapper-col {
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  flex: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 45rem;
+  width: 30rem;
+  border-radius: 5px;
+  margin: 1rem;
+  background: linear-gradient(45deg, #e0eafc, #cfdef3);
+
+  .message__user {
+    margin-top: -0.4rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 11rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background: $first-color;
+    width: 100%;
+    color: white;
+    position: relative;
+    padding: 2rem;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 3.5rem;
+      background: black;
+      bottom: 0;
+      position: absolute;
+      opacity: 0.4;
+    }
+
+    h1 {
+      font-size: 3.4rem;
+      font-weight: 300;
+      text-transform: capitalize;
+    }
+  }
+  .message__info {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    transform: translateY(-5rem);
+    i {
+      font-size: 2.4rem;
+    }
+  }
+  .message__photo {
+    height: 8rem;
+    width: 8rem;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 1rem;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .message__to {
+    width: 25rem;
+    height: 7rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: left;
+    color: $primary;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: 2;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      right: 50%;
+      border-right-color: white;
+      top: -14%;
+      transform: rotate(90deg);
+    }
+  }
+  .message__to-text {
+    text-transform: initial;
+    font-size: 1.25rem;
+  }
+  .message__from {
+    width: 25rem;
+    height: 7rem;
+    background: $primary;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+    position: relative;
+    border: 2px solid white;
+  }
+  .message__from-text {
+    text-transform: initial;
+    font-size: 1.25rem;
+  }
+  .message__btn {
+    font-size: 1.2rem;
+    width: 25rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.3rem;
+  }
+}

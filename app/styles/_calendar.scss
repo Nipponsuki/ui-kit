@@ -2,11 +2,15 @@
 .calendar{
 	margin-top: 2rem;
 	width: auto;
-	flex: 50%;
+	flex: 1;
 
 	button{
 		background: $first-color !important;
-		border: none;
+    border: 2px solid white;
+    
+    &:hover{
+      border: 2px solid white;
+    }
 	}
 
 	.fc-next-button {
