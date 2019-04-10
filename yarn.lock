@@ -709,6 +709,16 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
+"@fullcalendar/core@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/core/-/core-4.0.2.tgz#59ef822ba0c4bda60609d8b2d9f71bee8875505b"
+  integrity sha512-5DBjqoQretok6L0GNpcqkr0HnCNDzRH0REWJDeTTyHGi62V+8MC3IqZkpmDrFITTkIyDrvf8GHl3WhTI0bjYPQ==
+
+"@fullcalendar/daygrid@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/daygrid/-/daygrid-4.0.1.tgz#383bfd51dd55bbec2ccc90926e9dbdf710aa3789"
+  integrity sha512-nKFFKgTm5eijOukD6pjsQSLlsBoMrKuHXc00zaHaMWSeJndGHxtseR8oeHOnclNNScMKLXLNZthzEduSqqyuRw==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -6009,6 +6019,11 @@ isurl@^1.0.0-alpha5:
   dependencies:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
+
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+  integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
 
 js-base64@^2.1.8:
   version "2.5.1"
