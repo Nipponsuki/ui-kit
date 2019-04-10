@@ -18,14 +18,14 @@
 
     &:focus {
       outline: none;
-      background: $primary;
+      background: $secondary;
     }
   }
   i {
     height: 3rem;
     width: 3rem;
     border-radius: 5px;
-    background: $primary;
+    background: $secondary;
     color: white;
     padding: 0.8rem 0.5rem 0.5rem 0.5rem;
     font-size: 1.5rem;
@@ -59,7 +59,7 @@
 
     &:focus {
       outline: none;
-      background: $primary;
+      background: $secondary;
     }
   }
 }
