@@ -57,6 +57,7 @@
 
 .purple {
   background: $first-color;
+  box-shadow: $boxShadow-1;
 
   &::after {
     position: absolute;
@@ -73,6 +74,7 @@
 }
 .pink {
   background: $second-color;
+  box-shadow: $boxShadow-2;
   &::after {
     position: absolute;
     content: "";
