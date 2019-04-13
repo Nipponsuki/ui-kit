@@ -1,0 +1,23 @@
+.map-location {
+  grid-column: 1/-1;
+  width: 100%;
+  height: 100%;
+  .map {
+    width: 100%;
+    height: 100%;
+
+    .map__footer {
+      background: linear-gradient(45deg, #000000, #434343);
+      i {
+        width: 5rem;
+      }
+    }
+    .map-icon {
+      position: absolute;
+      top: 34.5%;
+      left: 47.5%;
+      font-size: 5rem;
+      color: black;
+    }
+  }
+}
