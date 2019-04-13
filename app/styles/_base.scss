@@ -43,11 +43,13 @@ body {
   min-width: 320px;
   max-width: 1920px;
   font-family: "Ubuntu", sans-serif;
-  padding: 6rem 10rem;
   text-align: center;
   width: 100%;
 }
 
+.ui-kit-layout {
+  padding: 6rem 10rem;
+}
 .title {
   text-transform: uppercase;
   margin-bottom: 5rem;

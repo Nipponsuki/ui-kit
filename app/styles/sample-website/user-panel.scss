@@ -1,0 +1,26 @@
+.user-panel {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+  grid-column: 2/-2;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: $boxShadow-2;
+
+  .user-panel__search {
+    width: 2rem;
+
+    form {
+      width: 100%;
+    }
+  }
+
+  .user-panel__heading {
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $primary;
+  }
+}
