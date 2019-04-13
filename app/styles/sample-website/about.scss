@@ -1,5 +1,6 @@
 .about {
-  background: white;
+  background: linear-gradient(45deg, #000000, #434343);
+
   grid-column: 2/-2;
   display: flex;
   align-items: center;
@@ -7,6 +8,7 @@
   padding: 1rem;
   border-radius: 5px;
   box-shadow: $boxShadow-2;
+  color: white;
 
   .about__info {
     width: 60%;
