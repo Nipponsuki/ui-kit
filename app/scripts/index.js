@@ -4,6 +4,7 @@ import { onSubmit } from './onSubmit'
 import { nextStep, sliderOne, sliderTwo } from './sliders'
 import { initCalendar } from './calendar'
 import { togglePlay, videoDuration } from './video'
+import { toggleAnimation } from './toggleAnimation'
 // import $ from 'jquery'
 
 if (process.env.NODE_ENV !== 'production') {
@@ -18,4 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCalendar()
   togglePlay()
   videoDuration()
+  toggleAnimation()
 })

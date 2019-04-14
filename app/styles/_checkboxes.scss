@@ -13,8 +13,8 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: #f2395a;
-  border: 1px solid #f2395a;
+  background-color: #4a00e0;
+  border: 1px solid #4a00e0;
   color: #ffffff;
   width: 6rem;
   height: 3rem;
@@ -22,29 +22,33 @@
   cursor: pointer;
   border-radius: 3rem;
   box-shadow: $boxShadow-2;
+
+  @media (max-width: 700px) {
+    font-size: 1rem;
+  }
 }
 .final__toggle-1__button:before {
   position: absolute;
   top: 4px;
-  left: 20px;
+  left: 25px;
   right: auto;
   display: inline-block;
   height: 20px;
   padding: 0 2px;
   background-color: #ffffff;
-  color: #f2395a;
-  content: "off";
+  color: #4a00e0;
+  content: "on";
   transition: all 0.3s ease;
   border-radius: 2rem;
 }
 .final__toggle-1__input:checked + .final__toggle-1__button {
-  background-color: #4a00e0;
-  border: 1px solid #4a00e0;
+  background-color: #f2395a;
+  border: 1px solid #f2395a;
 }
 .final__toggle-1__input:checked + .final__toggle-1__button:before {
   left: 5px;
-  content: "on";
-  color: #4a00e0;
+  content: "off";
+  color: #f2395a;
 }
 
 .final__toggle-2 {

@@ -9,6 +9,14 @@
   border-radius: 5px;
   box-shadow: $boxShadow-2;
 
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 700px) {
+    grid-column: 1/-1;
+  }
+
   .user-panel__search {
     width: 2rem;
 
