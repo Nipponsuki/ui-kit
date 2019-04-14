@@ -1,0 +1,35 @@
+section.order
+	h1.order__heading Order Now!
+	.container.block.col
+		.progress
+			.bgc
+			.progress-track
+				#step1.progress-step(data-step=0)
+					| 1
+				#step2.progress-step(data-step=25)
+					| 2
+				#step3.progress-step(data-step=50)
+					| 3
+				#step4.progress-step(data-step=75)
+					| 4
+				#step4.progress-step.toggleBgc(data-step=100)
+					| 5
+		h2.order__info Fill in necessary information
+		form.form
+			input.name-input(type="name" placeholder="Your Name")
+			input.email-input(type="email" placeholder="Your Email")
+			textarea.message-input(placeholder="Your Message")
+			.error-message Error
+			.success-message Thanks!
+		label.final__toggle-2(for='final-toggle2').block-toggle Use points
+			input#final-toggle2.final__toggle-2__input(type='checkbox')
+			span.final__toggle-2__button 
+				i.fas.fa-check
+		.dropdown
+			i.arrow-icon.fas.fa-chevron-down
+		.slider-1-container.slider-order
+			input.slider-1#slider1(type="range" min="0" max="100" value="50")
+			h2 Quantity:
+			.value.center 50
+		button.btn.btn--primary.btn--medium.btn--borderBottomPrimary.block-btn Submit
+

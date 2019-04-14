@@ -1,0 +1,65 @@
+.order {
+  grid-column: 2/-2;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: $boxShadow-2;
+  padding: 1rem;
+
+  .order__heading {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    color: black;
+    text-align: left;
+  }
+
+  label {
+    font-size: 1.4rem;
+    align-self: end;
+  }
+  .slider-order {
+    margin: 4rem 0;
+    h2 {
+      text-align: center;
+      margin: 1rem 0;
+    }
+  }
+
+  .dropdown {
+    margin: 2rem 0;
+  }
+
+  .order__info {
+    margin: 2rem 0;
+    align-self: start;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.container {
+  &.block {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+.block-toggle {
+  width: 100%;
+
+  span {
+    margin: 0.5rem auto;
+  }
+}
+
+.center {
+  left: 47%;
+}
+
+.block-btn {
+  width: 50%;
+  font-size: 1.8rem;
+}
