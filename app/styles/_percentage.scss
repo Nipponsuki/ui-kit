@@ -103,6 +103,24 @@
       transform: rotate((360/100 * $j) + deg);
     }
   }
+  &.green {
+    .bar,
+    .fill {
+      border-color: #27cebc !important;
+    }
+  } // orange skin
+  &.primary {
+    .bar,
+    .fill {
+      border-color: deepskyblue !important;
+    }
+  }
+  &.secondary {
+    .bar,
+    .fill {
+      border-color: $secondary !important;
+    }
+  }
 }
 
 .bar,

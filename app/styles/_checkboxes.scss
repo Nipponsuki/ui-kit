@@ -16,16 +16,17 @@
   background-color: #f2395a;
   border: 1px solid #f2395a;
   color: #ffffff;
-  width: 8rem;
+  width: 6rem;
   height: 3rem;
   transition: all 0.3s ease;
   cursor: pointer;
   border-radius: 3rem;
+  box-shadow: $boxShadow-2;
 }
 .final__toggle-1__button:before {
   position: absolute;
   top: 4px;
-  left: 40px;
+  left: 20px;
   right: auto;
   display: inline-block;
   height: 20px;

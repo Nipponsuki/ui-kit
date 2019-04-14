@@ -1,0 +1,57 @@
+.stats {
+  grid-column: 2/-2;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: $boxShadow-2;
+  padding: 1rem;
+}
+
+.stats__title {
+  text-align: left;
+  font-size: 2rem;
+  font-size: bold;
+  text-transform: capitalize;
+  align-self: center;
+}
+.stats__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stats__heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  color: black;
+  text-align: left;
+}
+
+.col {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  padding: 2rem;
+}
+
+.stats__text {
+  text-align: right;
+
+  .num {
+    font-size: 2.8rem;
+  }
+  .text {
+    font-size: 1.4rem;
+  }
+}
+
+.stats__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1rem;
+}
